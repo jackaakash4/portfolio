@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import {fontFamily} from "tailwindcss/defaultTheme"
 
 export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
@@ -14,7 +15,9 @@ export default {
           "Segoe UI Emoji",
           "Segoe UI Symbol",
           "Noto Color Emoji",
+          
         ],
+        poppins: ["Poppins", ...fontFamily.sans]
       },
     },
   },
